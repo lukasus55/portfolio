@@ -4,6 +4,7 @@ import { Metadata } from 'next';
 import TrackBackground from './components/TrackBackground';
 import Hero from './components/Hero';
 import HeaderSection from './components/HeaderSection';
+import About from './components/About';
 
 export async function generateMetadata({params,}: {params: Promise<{ lang: string }>;}): Promise<Metadata> {
   const { lang } = await params;
@@ -27,10 +28,12 @@ export default async function PortfolioTestPage( {params,}: {params: Promise<{ l
       <HeaderSection dict={dict}/>
     </header>
 
-    <main className="flex justify-center relative w-full">
+    <main className="flex justify-center relative w-full flex-wrap">
       <TrackBackground/>
 
       <Hero dict={dict}/>
+
+      <About dict={dict}/>
     </main>
     </>
 

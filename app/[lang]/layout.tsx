@@ -36,7 +36,7 @@ export default async function RootLayout({
   const { lang } = await params;
 
   return (
-    <html lang={lang}>
+    <html lang={lang} className="scroll-smooth">
       <body className="bg-background text-foreground">
         {children}
       </body>

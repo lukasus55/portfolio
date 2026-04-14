@@ -68,7 +68,7 @@ export default function PitStopMenu({
                         className="flex flex-col gap-8 text-center text-4xl font-bold"
                     >
                         <motion.li variants={itemVariants}>
-                            <Link href="#" onClick={onClose} className="hover:opacity-50 transition-opacity">
+                            <Link href="#about" onClick={onClose} className="hover:opacity-50 transition-opacity">
                                 {dict.navigation.about}
                             </Link>
                         </motion.li>
