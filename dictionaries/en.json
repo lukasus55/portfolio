@@ -1,0 +1,14 @@
+{
+    "meta": {
+        "title": "My Portfolio",
+        "description": "Welcome to my interactive portfolio featuring my latest projects."
+    },
+    "navigation": {
+        "home": "Home",
+        "projects": "Projects"
+    },
+    "hero": {
+        "greeting": "Hello, I'm a developer.",
+        "subtitle": "Welcome to my interactive portfolio."
+    }
+}
