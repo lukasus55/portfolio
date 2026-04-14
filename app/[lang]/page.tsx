@@ -18,14 +18,14 @@ export default async function PortfolioTestPage( {params,}: {params: Promise<{ l
   const dict = await getDictionary(lang);
 
   return (
-    <main className="flex items-center justify-center min-h-screen font-sans">
-      <div className="max-w-2xl p-8 rounded-3xl shadow-xl">
+    <main className="flex items-center justify-center min-h-screen">
+      <div className="rounded-3xl shadow-xl">
         
         {/* Testing the Dictionary */}
-        <h1 className="text-4xl font-bold mb-4">
-          {dict.hero.greeting}
+        <h1 className="text-9xl font-bold mb-4">
+          {dict.hero.name}
         </h1>
-        <p className="text-lg mb-8 opacity-60">
+        <p className="text-3xl mb-8 opacity-60">
           {dict.hero.subtitle}
         </p>
 

@@ -1,14 +1,14 @@
 {
     "meta": {
-        "title": "Moje Portfolio",
-        "description": "Welcome to my interactive portfolio featuring my latest projects."
+        "title": "Łukasz Kostyk - Portfolio",
+        "description": "Witaj w moim interaktywnym portfolio z najnowszymi projektami."
     },
     "navigation": {
         "home": "Główna",
         "projects": "Projekty"
     },
     "hero": {
-        "greeting": "Cześć, jestem programistą.",
-        "subtitle": "Witaj w moim interaktywnym portfolio."
+        "name": "ŁUKASZ KOSTYK",
+        "subtitle": "Full-Stack Developer."
     }
 }
