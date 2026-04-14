@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import { getDictionary } from '../../getDictionary';
 import { Metadata } from 'next';
+import TrackBackground from './components/TrackBackground';
+import Hero from './components/Hero';
 
 export async function generateMetadata({params,}: {params: Promise<{ lang: string }>;}): Promise<Metadata> {
   const { lang } = await params;
@@ -18,18 +20,12 @@ export default async function PortfolioTestPage( {params,}: {params: Promise<{ l
   const dict = await getDictionary(lang);
 
   return (
-    <main className="flex items-center justify-center min-h-screen">
-      <div className="rounded-3xl shadow-xl">
-        
-        {/* Testing the Dictionary */}
-        <h1 className="text-9xl font-bold mb-4">
-          {dict.hero.name}
-        </h1>
-        <p className="text-3xl mb-8 opacity-60">
-          {dict.hero.subtitle}
-        </p>
+    <main className="flex justify-center relative w-full">
 
-      </div>
+      <TrackBackground/>
+
+      <Hero dict={dict}/>
+
     </main>
   );
 }
