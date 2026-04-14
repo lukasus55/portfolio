@@ -4,8 +4,11 @@
         "description": "Welcome to my interactive portfolio featuring my latest projects."
     },
     "navigation": {
-        "home": "Home",
-        "projects": "Projects"
+        "close": "Close [X]",
+        "about": "About Me",
+        "change_language": "Change Language",
+        "projects": "Projects",
+        "contact": "Contact"
     },
     "hero": {
         "name": "ŁUKASZ KOSTYK",
