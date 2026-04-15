@@ -58,7 +58,7 @@ export default function PitStopMenu({
                 >
                     <button
                         onClick={onClose}
-                        className="absolute top-8 right-8 p-4 font-bold text-xl hover:scale-110 transition-transform"
+                        className="absolute top-8 right-8 p-4 font-bold text-xl hover:scale-110 transition-transform cursor-pointer"
                     >
                         {dict.navigation.close}
                     </button>

@@ -12,7 +12,7 @@ export default function HeaderSection({ dict } : { dict: Dictionary }) {
         <div className="flex inset-0 ">
             <button
                 onClick={() => setIsMenuOpen(true)}
-                className="absolute top-8 right-8 text-xl px-4 py-2 mt-2 mr-2 bg-accent hover:scale-110 text-slate-900 font-semibold rounded-full transition-transform"
+                className="absolute top-8 right-8 text-xl px-4 py-2 mt-2 mr-2 bg-accent hover:scale-110 text-background font-semibold rounded-full transition-transform cursor-pointer"
             >
                 PIT STOP
             </button>

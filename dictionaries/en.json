@@ -12,7 +12,8 @@
     },
     "hero": {
         "name": "ŁUKASZ KOSTYK",
-        "subtitle": "Full-Stack Developer"
+        "subtitle": "Full-Stack Developer",
+        "cta_button": "Start the ride"
     },
     "projects": {
         "title": "My Projects",

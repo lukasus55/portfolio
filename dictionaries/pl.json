@@ -12,10 +12,11 @@
     },
     "hero": {
         "name": "ŁUKASZ KOSTYK",
-        "subtitle": "Full-Stack Developer"
+        "subtitle": "Full-Stack Developer",
+        "cta_button": "Rozpocznij przejażdżkę"
     },
     "projects": {
-        "title": "Moje Projekty",
+        "title": "Przystanek: Moje Projekty",
         "linkLabel": "Zobacz więcej",
         "kkol": {
             "title": "Karwińska Olimpiada",
@@ -27,7 +28,7 @@
         }
     },
     "about": {
-        "title": "O Mnie",
+        "title": "Przystanek: O Mnie",
         "content": "Lorem ipsum ALE PO POLSKU dolor sit amet consectetur, adipisicing elit. Expedita assumenda quaerat sapiente aut eos iure. Tempora eligendi reiciendis consequuntur repellendus dolor laboriosam eveniet, hic numquam sed natus deserunt facere nemo?"
     }
 }

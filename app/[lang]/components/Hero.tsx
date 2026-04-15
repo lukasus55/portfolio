@@ -1,3 +1,6 @@
+import Link from 'next/link';
+import CallToActionButton from './CallToActionButton';
+
 type Dictionary = typeof import('../../../dictionaries/en.json');
 
 export default function Hero({ dict } : { dict: Dictionary }) {
@@ -10,6 +13,8 @@ export default function Hero({ dict } : { dict: Dictionary }) {
                 <p className="text-3xl mb-8 opacity-60">
                     {dict.hero.subtitle}
                 </p>
+
+                <CallToActionButton dict={dict}/>
             </div>
         </div>
     )
