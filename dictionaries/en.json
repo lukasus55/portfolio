@@ -15,7 +15,12 @@
         "subtitle": "Full-Stack Developer"
     },
     "projects": {
-        "title": "My Projects"
+        "title": "My Projects",
+        "linkLabel": "See more",
+        "kkol": {
+            "title": "Karwińska Olimpiada - kkol.pl",
+            "description": "Official tournament tracking and management platform for the Karwińska Olimpiada - an annual series of competitive tournaments among friends."
+        }
     },
     "about": {
         "title": "About Me",
