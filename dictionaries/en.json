@@ -13,5 +13,12 @@
     "hero": {
         "name": "ŁUKASZ KOSTYK",
         "subtitle": "Full-Stack Developer"
+    },
+    "projects": {
+        "title": "My Projects"
+    },
+    "about": {
+        "title": "About Me",
+        "content": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita assumenda quaerat sapiente aut eos iure. Tempora eligendi reiciendis consequuntur repellendus dolor laboriosam eveniet, hic numquam sed natus deserunt facere nemo?"
     }
 }
