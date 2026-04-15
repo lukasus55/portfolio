@@ -21,11 +21,23 @@ export default function Projects({ dict } : { dict: Dictionary }) {
 
                 <div className='w-3/4'>
                     <ProjectWidget
+                    isMajor = {true}
                     title = {dict.projects.kkol.title}
                     description = {dict.projects.kkol.description}
                     tags = {['HTML', 'CSS3', 'javascript', 'postgresql', 'docker']}
                     link = 'https://www.kkol.pl'
                     imgSrc = '/kkol-mockup.webp'
+                    />
+                </div>
+
+                <div className='w-3/4'>
+                    <ProjectWidget
+                    isMajor = {true}
+                    title = {dict.projects.dartES.title}
+                    description = {dict.projects.dartES.description}
+                    tags = {['react', 'tailwind', 'typescript']}
+                    link = 'https://lukasus55.github.io/dartES/'
+                    imgSrc = '/dartes-mockup.webp'
                     />
                 </div>
 

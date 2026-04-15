@@ -18,8 +18,12 @@
         "title": "My Projects",
         "linkLabel": "See more",
         "kkol": {
-            "title": "Karwińska Olimpiada - kkol.pl",
+            "title": "Karwińska Olimpiada",
             "description": "Official tournament tracking and management platform for the Karwińska Olimpiada - an annual series of competitive tournaments among friends."
+        },
+        "dartES": {
+            "title": "DartES",
+            "description": "A Darts Scoreboard application. Designed for local matches, detailed stat tracking, and professional broadcasting integration."
         }
     },
     "about": {

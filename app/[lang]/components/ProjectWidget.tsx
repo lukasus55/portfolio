@@ -8,6 +8,7 @@ import { ProjectTag } from "./Projects";
 
 // We define exactly what information each project card needs
 interface ProjectWidgetProps {
+    isMajor: boolean;
     title: string;
     description: string;
     tags: ProjectTag[];
@@ -16,6 +17,7 @@ interface ProjectWidgetProps {
 }
 
 export default function ProjectWidget({
+    isMajor,
     title,
     description,
     tags,
@@ -23,15 +25,17 @@ export default function ProjectWidget({
     imgSrc,
 }: ProjectWidgetProps) {
 
+    const widgetDefaultStyle:string = 'mt-20 rounded-3xl p-4 bg-foreground text-background'
+    const widgetStyle:string = isMajor ? `w-full ${widgetDefaultStyle}` : `w-1/2 ${widgetDefaultStyle}`
+
     return (
-        <Link href={link} target="_blank">
-            <motion.div
-                // The tactile Framer Motion hover effect
-                whileHover={{ y: -10, scale: 1.02 }}
-                transition={{ type: "spring", stiffness: 400, damping: 25 }}
-                className="w-full mt-20 rounded-3xl p-4 bg-foreground text-background"
-            >
-                
+        <motion.div
+            // The tactile Framer Motion hover effect
+            whileHover={{ y: -10, scale: 1.02 }}
+            transition={{ type: "spring", stiffness: 400, damping: 25 }}
+            className={widgetStyle}
+        >
+            <Link href={link} target="_blank">
                 <div className='flex w-full justify-center row-span-8 items-center'> 
                     <Image 
                     src={imgSrc}
@@ -42,18 +46,17 @@ export default function ProjectWidget({
                 </div>
                 <div className='flex w-full text-3xl font-semibold mt-6'>{title}</div>
                 <div className='flex w-full opacity-60 mt-2'>{description}</div>
-                <div className='flex w-full mt-2 gap-2'>
+                <div className='flex flex-wrap w-full mt-2 gap-2'>
                     {
                         tags.map((tag:ProjectTag) => {
                             return (
-                                <ProjectBadge technology={tag}/>
+                                <ProjectBadge technology={tag} key={`${title} ${tag}`}/>
                             )
                         })
                     }
                 </div>
-
-            </motion.div>
-        </Link>
+            </Link>
+        </motion.div>
     );
 }
 

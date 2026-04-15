@@ -18,8 +18,12 @@
         "title": "Moje Projekty",
         "linkLabel": "Zobacz więcej",
         "kkol": {
-            "title": "Karwińska Olimpiada - kkol.pl",
+            "title": "Karwińska Olimpiada",
             "description": "Oficjalna platforma do śledzenia i zarządzania turniejami z serii Karwińska Olimpiada - corocznej serii turniejów."
+        },
+        "dartES": {
+            "title": "DartES",
+            "description": "Aplikacja do darta. Śledź wynik meczu oraz szczegółowe statystyki. Zintegrowana tablica wyników do użycia przy profesjonalnych transmisjach na żywo."
         }
     },
     "about": {
