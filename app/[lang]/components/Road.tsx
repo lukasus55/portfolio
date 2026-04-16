@@ -1,9 +1,17 @@
-export default function Road({ roadPath }: { roadPath: string }) {
+export default function Road({ roadPath, viewBoxXY }: { roadPath: string, viewBoxXY: Array<string> }) {
+
+    if (!viewBoxXY[0] || !viewBoxXY[1]) {
+        console.error("Incorrect viewBox")
+        return null;
+    }
+    
+    const viewBoxString = `0 0 ${viewBoxXY[0]} ${viewBoxXY[1]}`
+
     return (
         <svg
             className="absolute inset-0 w-full h-full"
             preserveAspectRatio="none"
-            viewBox="0 0 1500 4500"
+            viewBox={viewBoxString}
         >
             {/* THE CURB (Bottom Layer) */}
             <path

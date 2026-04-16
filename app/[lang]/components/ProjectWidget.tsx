@@ -26,7 +26,7 @@ export default function ProjectWidget({
 }: ProjectWidgetProps) {
 
     const widgetDefaultStyle:string = 'mt-20 rounded-3xl p-4 bg-foreground text-background'
-    const widgetStyle:string = isMajor ? `w-full ${widgetDefaultStyle}` : `w-1/2 ${widgetDefaultStyle}`
+    const widgetStyle:string = isMajor ? `w-full ${widgetDefaultStyle}` : `w-[calc(50%-0.5rem)] max-lg:w-full ${widgetDefaultStyle}`
 
     return (
         <motion.div

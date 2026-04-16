@@ -38,7 +38,7 @@ export default async function RootLayout({
   return (
     <html lang={lang} className="scroll-smooth">
       <body className="bg-background text-foreground">
-        <link rel="icon" href="/app/favicon.ico" />
+        <link rel="icon" href="/favicon.ico" />
         {children}
       </body>
     </html>

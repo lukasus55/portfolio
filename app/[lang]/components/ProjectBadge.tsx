@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { capitalizeFirstLetter } from "@/helpers";
+import capitalizeFirstLetter from "@/app/utils/capitalizeFirstLetter";
 
 export default function ProjectBadge({technology}: {technology: string}) {
 
