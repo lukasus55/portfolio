@@ -16,9 +16,9 @@ export default function MainSection({ dict } : { dict: Dictionary }) {
     const commonMainStyle = "flex justify-center relative flex-wrap overflow-hidden";
 
     const allMainStyles = {
-        desktop: `${commonMainStyle} w-[min(1500px,100vw)] h-[4500px]`,
-        tablet: `${commonMainStyle} w-[min(800px,100vw)] h-[5000px]`,
-        mobile: `${commonMainStyle} w-[min(400px,100vw)] h-[5000px]`,
+        desktop: `${commonMainStyle} w-[min(1550px,100vw)] h-[4500px]`,
+        tablet: `${commonMainStyle} w-[min(850px,100vw)] h-[5000px]`,
+        mobile: `${commonMainStyle} w-[min(450px,100vw)] h-[5000px]`,
     };
 
     const mainStyle = allMainStyles[mediaMode];

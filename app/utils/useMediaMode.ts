@@ -11,8 +11,8 @@ export default function useMediaMode(): MediaMode {
         const calculateMode = (): MediaMode => {
             const width = window.innerWidth;
             if (width >= 1024) return "desktop";
-            if (width >= 640) return "tablet";
-            return "mobile";
+            if (width >= 640) return "tablet"; // tailwind max-lg
+            return "mobile"; // tailwind max-sm
         };
 
         setMode(calculateMode());

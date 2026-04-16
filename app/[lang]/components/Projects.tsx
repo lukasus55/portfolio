@@ -17,8 +17,8 @@ type Dictionary = typeof import('../../../dictionaries/en.json');
 
 export default function Projects({ dict } : { dict: Dictionary }) {
     return (
-        <div className='flex w-full justify-center z-10 absolute top-300 pt-24' id='projects'>
-            <div className="flex flex-wrap rounded-3xl shadow-xl w-1/2 max-lg:w-full max-lg:px-4 text-justify">
+        <section className='flex w-full justify-center z-10 absolute top-300 pt-24 max-sm:justify-start' id='projects'>
+            <div className="flex flex-wrap rounded-3xl shadow-xl w-1/2 max-sm:w-7/10 text-justify">
                 <h2 className='text-5xl font-bold w-full'> {dict.projects.title} </h2>
 
                 <div className='flex flex-wrap w-3/4 max-lg:w-full'>
@@ -62,6 +62,6 @@ export default function Projects({ dict } : { dict: Dictionary }) {
                 </div>
 
             </div>
-        </div>
+        </section>
     )
 }
