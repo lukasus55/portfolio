@@ -1,4 +1,6 @@
 import ProjectWidget from './ProjectWidget';
+import Image from 'next/image';
+import Link from 'next/link';
 
 export type ProjectTag = 
     | "CSS3" 
@@ -39,6 +41,14 @@ export default function Projects({ dict } : { dict: Dictionary }) {
                     link = 'https://lukasus55.github.io/dartES/'
                     imgSrc = '/dartes-mockup.webp'
                     />
+                </div>
+
+                <div className='flex w-full justify-left'>
+                    <Link href="https://github.com/lukasus55" target='_blank'>
+                        <button className="flex gap-2 text-xl px-4 py-2 mt-20 mr-2 bg-accent hover:scale-110 text-background font-semibold rounded-full transition-transform cursor-pointer">
+                            <Image src="/github.svg" width={18} height={18} alt={'Github'}/> {'Github'}
+                        </button>
+                    </Link>
                 </div>
 
             </div>
