@@ -5,13 +5,17 @@ import { useEffect, useState } from "react";
 import RouteTrack from "./RouteTrack";
 import RouteStop from "./RouteStop";
 
-const STOPS = [
-    { id: "home", label: "Start" },
-    { id: "portfolio", label: "Projekty" },
-    { id: "about", label: "O mnie" }
-];
 
-export default function Navbar() {
+type Dictionary = typeof import('../../../dictionaries/en.json');
+
+export default function Navbar({ dict } : { dict : Dictionary }) {
+
+    const STOPS = [
+        { id: "home", label: dict.navigation.home },
+        { id: "portfolio", label: dict.navigation.portfolio },
+        { id: "about", label: dict.navigation.about }
+    ];
+
     const progressWidth = useMotionValue("0%");
     const [activeStop, setActiveStop] = useState(STOPS[0].id);
 

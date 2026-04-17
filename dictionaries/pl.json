@@ -4,11 +4,9 @@
         "description": "Witaj w moim interaktywnym portfolio z najnowszymi projektami."
     },
     "navigation": {
-        "close": "Zamknij [X]",
-        "about": "O Mnie",
-        "change_language": "Zmień Język",
-        "projects": "Projekty",
-        "contact": "Kontakt"
+        "home": "Start",
+        "portfolio": "Projekty",
+        "about": "O mnie"
     },
     "hero": {
         "name": "ŁUKASZ KOSTYK",
