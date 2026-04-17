@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #171717;
-  --foreground: #ebebeb;
+  --background: #24241e;
+  --foreground: #f1f1d0;
   --accent: #ffe600;
   --accent-strong: #ffc400;
 }
@@ -13,13 +13,6 @@
   --color-accent: var(--accent);
   --color-accent-strong: var(--accent-strong);
   --font-oswald: "Oswald", sans-serif;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
 }
 
 body {
