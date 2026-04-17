@@ -1,20 +1,50 @@
 import Link from 'next/link';
 import CallToActionButton from './CallToActionButton';
+import Image from 'next/image';
 
 type Dictionary = typeof import('../../../dictionaries/en.json');
 
 export default function Hero({ dict } : { dict: Dictionary }) {
     return (
-        <section className='flex w-full justify-center z-10 absolute top-0 pt-24' id='hero'>
-            <div className="rounded-3xl shadow-xl w-1/2 max-lg: ml-16">
-                <h1 className="text-9xl font-bold mb-4 max-lg:text-7xl">
-                    {dict.hero.name}
-                </h1>
-                <p className="text-3xl mb-8 opacity-60">
-                    {dict.hero.subtitle}
-                </p>
+        <section className='flex w-full justify-center z-10 absolute top-40 pt-24' id='hero'>
+            <div className="shadow-xl w-1/2 max-lg: ml-16">
 
-                <CallToActionButton dict={dict}/>
+                <div className='grid gap-2 leading-10'>
+
+                    <div className='col-text-5xl font-bold text-5xl'>{dict.hero.name}</div>
+
+                    <div className='flex gap-1.5 text-3xl flex-wrap'>
+                        <div className='opacity-80'>{dict.hero.position.title}</div>
+                        <div className='font-bold'>{dict.hero.position.value}</div>
+                        <div className='opacity-80 inline-block'>{dict.hero.location.title}</div>
+                        <div className='font-bold'><span className='inline-block'><Image src={`/poland.svg`} width={24} height={16} alt={'Poland'}/></span> <span className="inline-block">{dict.hero.location.value}</span></div>
+                    </div>
+
+                </div>
+
+            <div className='flex mt-20 gap-2'>
+
+                <Link href="https://github.com/lukasus55" target='_blank'>
+                    <button className="group flex items-center text-xl py-2 px-2.5 bg-accent text-background font-semibold rounded-full transition-all cursor-pointer">
+                        <Image src="/github.svg" width={24} height={24} alt={'Github'}/> 
+                        <span className="max-w-0 overflow-hidden whitespace-nowrap transition-all duration-300 ease-in-out group-hover:max-w-xs group-hover:ml-2">
+                            Github
+                        </span>
+                    </button>
+                </Link>
+
+                <Link href="mailto:lukas.kostyk@gmail.com">
+                    <button className="group flex items-center text-xl py-2 px-2.5 bg-accent text-background font-semibold rounded-full transition-all cursor-pointer">
+                        <Image src="/mail.svg" width={24} height={24} alt={'Github'}/> 
+                        <span className="max-w-0 overflow-hidden whitespace-nowrap transition-all duration-300 ease-in-out group-hover:max-w-xs group-hover:ml-2">
+                            E-mail
+                        </span>
+                    </button>
+                </Link>
+
+            </div>
+
+
             </div>
         </section>
     )

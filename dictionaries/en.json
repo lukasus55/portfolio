@@ -12,7 +12,14 @@
     },
     "hero": {
         "name": "ŁUKASZ KOSTYK",
-        "subtitle": "Full-Stack Developer",
+        "position": {
+            "title": "I am a",
+            "value": "Full-Stack Developer"
+        },
+        "location": {
+            "title": "who lives in",
+            "value": "Gdynia"
+        },
         "cta_button": "Start the ride"
     },
     "projects": {

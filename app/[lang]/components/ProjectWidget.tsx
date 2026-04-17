@@ -41,7 +41,7 @@ export default function ProjectWidget({
                     src={imgSrc}
                     width={700}
                     height={100} 
-                    alt='Test'
+                    alt={title}
                     className='rounded-3xl'/> 
                 </div>
                 <div className='flex w-full text-3xl font-semibold mt-6'>{title}</div>
