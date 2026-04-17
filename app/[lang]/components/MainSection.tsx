@@ -24,7 +24,7 @@ export default function MainSection({ dict } : { dict: Dictionary }) {
     const mainStyle = allMainStyles[mediaMode];
 
     return (
-        <main className={mainStyle}>
+        <main className={mainStyle} id="start">
             <TrackBackground />
 
             <Hero dict={dict} />

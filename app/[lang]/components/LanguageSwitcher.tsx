@@ -1,41 +1,36 @@
 "use client";
 
-import Link from "next/link";
 import { usePathname } from "next/navigation";
+import Image from "next/image";
+import { useState } from "react";
+import LanguageSwitcherDropdown from "./LanguageSwitcherDropdown";
 
 export default function LanguageSwitcher() {
     const pathname = usePathname();
     const currentLang = pathname?.split("/")[1] || "en";
-
-    const switchLanguage = (newLocale: string) => {
-        if (!pathname) return "/";
-        const segments = pathname.split("/");
-        segments[1] = newLocale;
-        return segments.join("/");
-    };
+    
+    const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <div className="flex bg-slate-900 p-2 rounded-full shadow-[0_8px_30px_rgb(0,0,0,0.12)] absolute bottom-8 font-bold">
-            <Link
-                href={switchLanguage("pl")}
-                className={`px-8 py-3 rounded-full font-bold text-sm uppercase tracking-widest transition-all duration-300 ${
-                    currentLang === "pl"
-                        ? "bg-accent-strong text-slate-900 shadow-md scale-105"
-                        : "text-accent-strong hover:opacity-60"
-                }`}
+        <div className="absolute top-0 right-0 m-8 z-300 w-30 flex flex-col items-end font-bold bg-foreground text-background shadow-xl justify-center rounded-3xl">
+
+            <button 
+                onClick={() => setIsOpen(!isOpen)}
+                className="font-bold text-background shadow-xl w-full justify-center py-2 rounded-3xl flex items-center gap-2 cursor-pointer bg-foreground opacity-80 hover:opacity-100 hover:bg-[#dadac8] transition-all"
             >
-                Polski
-            </Link>
-            <Link
-                href={switchLanguage("en")}
-                className={`px-8 py-3 rounded-full font-bold text-sm uppercase tracking-widest transition-all duration-300 ${
-                    currentLang === "en"
-                        ? "bg-accent-strong text-slate-900 shadow-md scale-105"
-                        : "text-accent-strong hover:opacity-60"
-                }`}
-            >
-                English
-            </Link>
+                <Image src="/language.svg" width={16} height={16} alt='Language icon'/> 
+                <span>{currentLang === "en" ? 'English' : 'Polski'}</span>
+            </button>
+
+            {isOpen && (
+                <LanguageSwitcherDropdown 
+                    currentLang={currentLang} 
+                    closeDropdown={() => setIsOpen(false)} 
+                />
+            )}
+
+
+
         </div>
     );
 }

@@ -2,6 +2,7 @@ import { getDictionary } from '../../getDictionary';
 import { Metadata } from 'next';
 import HeaderSection from './components/HeaderSection';
 import MainSection from './components/MainSection';
+import LanguageSwitcher from './components/LanguageSwitcher';
 
 export async function generateMetadata({params,}: {params: Promise<{ lang: string }>;}): Promise<Metadata> {
   const { lang } = await params;
@@ -20,6 +21,7 @@ export default async function PortfolioTestPage( {params,}: {params: Promise<{ l
 
   return (
     <>
+      <LanguageSwitcher/>
 
       <header className="fixed z-40 top-0 left-0 site_header flex justify-end w-full">
         <HeaderSection dict={dict}/>

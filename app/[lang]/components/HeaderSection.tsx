@@ -10,11 +10,10 @@ export default function HeaderSection({ dict } : { dict: Dictionary }) {
     return (
         <div className="flex w-full justify-center text-foreground">
 
-            <Navbar dict = {dict}/>
+            <header className="flex w-full max-lg:hidden">
+                <Navbar dict = {dict}/>
+            </header>
 
-            <div className="absolute flex bottom-0 left-0 h-24">
-                <LanguageSwitcher/>
-            </div>
         </div>
     );
 }

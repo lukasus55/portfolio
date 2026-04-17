@@ -5,7 +5,7 @@ type Dictionary = typeof import('../../../dictionaries/en.json');
 
 export default function Hero({ dict } : { dict: Dictionary }) {
     return (
-        <section className='flex w-full justify-center z-10 absolute top-40 pt-24' id='home'>
+        <section className='flex w-full justify-center z-10 absolute top-40 pt-24' id='hero'>
             <div className="w-1/2 max-lg: ml-16">
 
                 <div className='grid gap-2 leading-10'>
@@ -24,7 +24,7 @@ export default function Hero({ dict } : { dict: Dictionary }) {
             <div className='flex mt-20 gap-2'>
 
                 <Link href="https://github.com/lukasus55" target='_blank'>
-                    <button className="group flex items-center text-xl py-2 px-2.5 bg-accent text-background font-semibold rounded-full transition-all cursor-pointer">
+                    <button className="group flex items-center text-xl py-2 px-2.5 bg-foreground text-background font-semibold rounded-full transition-all cursor-pointer">
                         <Image src="/github.svg" width={24} height={24} alt={'Github'}/> 
                         <span className="max-w-0 overflow-hidden whitespace-nowrap transition-all duration-300 ease-in-out group-hover:max-w-xs group-hover:ml-2">
                             Github
@@ -33,7 +33,7 @@ export default function Hero({ dict } : { dict: Dictionary }) {
                 </Link>
 
                 <Link href="mailto:lukas.kostyk@gmail.com">
-                    <button className="group flex items-center text-xl py-2 px-2.5 bg-accent text-background font-semibold rounded-full transition-all cursor-pointer">
+                    <button className="group flex items-center text-xl py-2 px-2.5 bg-foreground text-background font-semibold rounded-full transition-all cursor-pointer">
                         <Image src="/mail.svg" width={24} height={24} alt={'Github'}/> 
                         <span className="max-w-0 overflow-hidden whitespace-nowrap transition-all duration-300 ease-in-out group-hover:max-w-xs group-hover:ml-2">
                             E-mail

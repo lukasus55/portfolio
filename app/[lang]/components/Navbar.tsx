@@ -11,7 +11,7 @@ type Dictionary = typeof import('../../../dictionaries/en.json');
 export default function Navbar({ dict } : { dict : Dictionary }) {
 
     const STOPS = [
-        { id: "home", label: dict.navigation.home },
+        { id: "start", label: dict.navigation.home },
         { id: "portfolio", label: dict.navigation.portfolio },
         { id: "about", label: dict.navigation.about }
     ];
