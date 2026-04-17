@@ -7,6 +7,8 @@ import ProjectBadge from "./ProjectBadge";
 import { ProjectTag } from "./Projects";
 import ProjectLink from "./ProjectLink";
 
+type Dictionary = typeof import('../../../dictionaries/en.json');
+
 interface ProjectWidgetProps {
     isMajor: boolean;
     title: string;
@@ -15,6 +17,7 @@ interface ProjectWidgetProps {
     websiteLink: string,
     githubLink: string,
     imgSrc: string;
+    dict: Dictionary;
 }
 
 export default function ProjectWidget({
@@ -25,6 +28,7 @@ export default function ProjectWidget({
     websiteLink,
     githubLink,
     imgSrc,
+    dict
 }: ProjectWidgetProps) {
 
     const widgetDefaultStyle:string = 'rounded-3xl p-4 bg-[#2b2b23] text-foreground shadow-xl'
@@ -53,7 +57,7 @@ export default function ProjectWidget({
                 </div>
 
             <div className="flex w-full mt-6">
-                <ProjectLink websiteLink={websiteLink} githubLink={githubLink}/>
+                <ProjectLink websiteLink={websiteLink} githubLink={githubLink} dict={dict}/>
             </div>
         </div>
     );

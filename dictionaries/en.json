@@ -24,7 +24,10 @@
     },
     "projects": {
         "title": "My Projects",
-        "linkLabel": "See more",
+        "linkLabels": {
+            "website": "Website",
+            "source": "Source"
+        },
         "kkol": {
             "title": "Karwińska Olimpiada",
             "description": "Official tournament tracking and management platform for the Karwińska Olimpiada - an annual series of competitive tournaments among friends."

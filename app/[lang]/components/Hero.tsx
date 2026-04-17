@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import CallToActionButton from './CallToActionButton';
 import Image from 'next/image';
 
 type Dictionary = typeof import('../../../dictionaries/en.json');

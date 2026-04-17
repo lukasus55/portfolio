@@ -24,7 +24,10 @@
     },
     "projects": {
         "title": "Przystanek: Moje Projekty",
-        "linkLabel": "Zobacz więcej",
+        "linkLabels": {
+            "website": "Strona",
+            "source": "Źródło"
+        },
         "kkol": {
             "title": "Karwińska Olimpiada",
             "description": "Oficjalna platforma do śledzenia i zarządzania turniejami z serii Karwińska Olimpiada - corocznej serii turniejów."

@@ -15,7 +15,7 @@ type Dictionary = typeof import('../../../dictionaries/en.json');
 
 export default function Projects({ dict } : { dict: Dictionary }) {
     return (
-        <section className='flex w-full justify-center z-10 absolute top-300 pt-24 max-sm:justify-start' id='projects'>
+        <section className='flex w-full justify-center z-10 absolute top-300 pt-24 max-sm:justify-start' id='portfolio'>
             <div className="flex flex-wrap rounded-3xl w-1/2 max-sm:w-7/10 text-justify gap-8">
                 <h2 className='text-5xl font-bold w-full'> {dict.projects.title} </h2>
 
@@ -28,6 +28,7 @@ export default function Projects({ dict } : { dict: Dictionary }) {
                     websiteLink = 'https://www.kkol.pl'
                     githubLink = 'https://github.com/lukasus55/kkol'
                     imgSrc = '/kkol-mockup.webp'
+                    dict={dict}
                     />
 
                     <div className='flex w-full justify-between flex-wrap'>
@@ -39,6 +40,7 @@ export default function Projects({ dict } : { dict: Dictionary }) {
                         websiteLink = 'https://lukasus55.github.io/dartES/'
                         githubLink = 'https://github.com/lukasus55/dartES'
                         imgSrc = '/dartes-mockup.webp'
+                        dict={dict}
                         />
 
                         <ProjectWidget
@@ -49,6 +51,7 @@ export default function Projects({ dict } : { dict: Dictionary }) {
                         websiteLink = 'https://lukasus55.github.io/dartES/'
                         githubLink = 'https://github.com/lukasus55/dartES'
                         imgSrc = '/dartes-mockup.webp'
+                        dict={dict}
                         />
                     </div>
                 </div>
