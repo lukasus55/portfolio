@@ -15,7 +15,7 @@ type Dictionary = typeof import('../../../dictionaries/en.json');
 
 export default function Projects({ dict } : { dict: Dictionary }) {
     return (
-        <section className='flex w-full justify-center z-10 absolute top-300 pt-24 max-sm:justify-start' id='portfolio'>
+        <section className='flex w-full justify-center z-10 absolute top-300 pt-36 max-sm:justify-start' id='portfolio'>
             <div className="flex flex-wrap rounded-3xl w-1/2 max-sm:w-7/10 text-justify gap-8 pl-4">
                 <h2 className='text-5xl font-bold w-full'> {dict.projects.title} </h2>
 

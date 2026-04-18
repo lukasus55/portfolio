@@ -26,7 +26,7 @@ export default function LanguageSwitcherDropdown({ currentLang, closeDropdown }:
     ];
 
     return (
-        <div className="mt-2 shadow-xl rounded-b-2xl overflow-hidden flex flex-col w-full origin-top-right animate-in fade-in zoom-in-95 duration-200">
+        <div>
             {languages.map((lang) => {
                 const isActive = currentLang === lang.code;
                 

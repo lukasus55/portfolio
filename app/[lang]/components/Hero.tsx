@@ -16,7 +16,7 @@ export default function Hero({ dict } : { dict: Dictionary }) {
                         <div className=''>{dict.hero.position.title}</div>
                         <div className='font-bold'>{dict.hero.position.value}</div>
                         <div className=''>{dict.hero.location.title}</div>
-                        <div className='font-bold'><span className='inline-block'><Image src={`/poland.svg`} width={24} height={16} alt='Poland' title='Poland'/></span> <span className="inline-block">{dict.hero.location.value}</span></div>
+                        <div className='font-bold'><span className='inline-block'><Image src={`/poland.svg`} width={24} height={24} alt='Poland' title='Poland'/></span> <span className="inline-block">{dict.hero.location.value}</span></div>
                     </div>
 
                 </div>

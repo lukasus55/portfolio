@@ -22,12 +22,20 @@ export default function LanguageSwitcher() {
                 <span>{currentLang === "en" ? 'English' : 'Polski'}</span>
             </button>
 
-            {isOpen && (
+            
+            <div 
+                className={`mt-2 shadow-xl rounded-b-2xl overflow-hidden flex flex-col w-full origin-top-right transition-all duration-200 ease-out
+                ${isOpen 
+                    ? 'opacity-100 scale-100 pointer-events-auto' 
+                    : 'opacity-0 scale-95 pointer-events-none'
+                }`}
+            >
+                {isOpen &&
                 <LanguageSwitcherDropdown 
                     currentLang={currentLang} 
-                    closeDropdown={() => setIsOpen(false)} 
-                />
-            )}
+                    closeDropdown={() => setIsOpen(false)}
+                />}
+            </div>
 
 
 

@@ -21,7 +21,7 @@
         "cta_button": "Rozpocznij przejażdżkę"
     },
     "projects": {
-        "title": "Przystanek: Moje Projekty",
+        "title": "Moje Projekty",
         "linkLabels": {
             "website": "Strona",
             "source": "Źródło"
@@ -36,7 +36,20 @@
         }
     },
     "about": {
-        "title": "Przystanek: O Mnie",
-        "content": "Lorem ipsum ALE PO POLSKU dolor sit amet consectetur, adipisicing elit. Expedita assumenda quaerat sapiente aut eos iure. Tempora eligendi reiciendis consequuntur repellendus dolor laboriosam eveniet, hic numquam sed natus deserunt facere nemo?"
+        "title": "O Mnie",
+        "paragraphs": [
+            {
+                "title": "Akapit 1",
+                "content": "Lorem ipsum ALE PO POLSKU dolor sit amet consectetur, adipisicing elit. Expedita assumenda quaerat sapiente aut eos iure. Tempora eligendi reiciendis consequuntur repellendus dolor laboriosam eveniet, hic numquam sed natus deserunt facere nemo?"
+            },
+            {
+                "title": "Akapit 2",
+                "content": "Lorem ipsum ALE PO POLSKU dolor sit amet consectetur, adipisicing elit. Expedita assumenda quaerat sapiente aut eos iure. Tempora eligendi reiciendis consequuntur repellendus dolor laboriosam eveniet, hic numquam sed natus deserunt facere nemo?"
+            },
+            {
+                "title": "Akapit 3",
+                "content": "Lorem ipsum ALE PO POLSKU dolor sit amet consectetur, adipisicing elit. Expedita assumenda quaerat sapiente aut eos iure. Tempora eligendi reiciendis consequuntur repellendus dolor laboriosam eveniet, hic numquam sed natus deserunt facere nemo?"
+            }
+        ]
     }
 }
