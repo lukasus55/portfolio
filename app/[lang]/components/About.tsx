@@ -10,10 +10,11 @@ export default function About({ dict } : { dict: Dictionary }) {
             
                 <h2 className='text-5xl font-bold'> {dict.about.title} </h2>
 
-                <div className='grid grid-cols-[auto_1fr] grid-rows-3 mt-4 gap-4 rounded-3xl p-4 bg-[#2b2b23] text-foreground shadow-x max-lg:grid-cols-1 max-lg:grid-rows-1'> 
-                    <div className='row-span-3 mas-lg:row-span-1'> 
-                        {/* <Image src='/photo.webp' width={120} height={240} alt="Zdjęcie"/>  */}
-                        <div className='bg-gray-500 w-[180px] h-[240px]'> </div> {/* TODO: zamienić placeholder na zdjęcie */}
+                <div className='grid grid-cols-[auto_1fr] grid-rows-2 mt-4 gap-4 rounded-3xl p-4 bg-[#2b2b23] text-foreground shadow-x max-lg:grid-cols-1 max-lg:grid-rows-1 max-sm:mr-2'> 
+                    <div className='row-span-3 max-lg:row-span-1'>
+                        <div >
+                            <Image src='/photo.jpg' width={180} height={240} alt="Zdjęcie" className='rounded-3xl'/>
+                        </div>
                     </div>
 
                     {

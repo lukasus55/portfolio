@@ -1,6 +1,7 @@
 type Dictionary = typeof import('../../../dictionaries/en.json');
 
 export default function AboutParagraph({ title, content } : { title: string , content: string }) {
+    const test = 'A'
     return (
         <div className="">
             <div className='w-full text-xl'> {title} </div>

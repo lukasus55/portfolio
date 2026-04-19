@@ -36,19 +36,15 @@
         }
     },
     "about": {
-        "title": "O Mnie",
+        "title": "About Me",
         "paragraphs": [
             {
-                "title": "Paragraph 1",
-                "content": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita assumenda quaerat sapiente aut eos iure. Tempora eligendi reiciendis consequuntur repellendus dolor laboriosam eveniet, hic numquam sed natus deserunt facere nemo?"
+                "title": "Professional Profile",
+                "content": "I am a 19-year-old full-stack developer dedicated to building efficient, user-centric applications from the ground up. I thrive on tackling complex technical challenges and am highly adaptable, always eager to learn new frameworks and technologies to continuously elevate my craft."
             },
             {
-                "title": "Paragraph 2",
-                "content": "Lorem ipsum sit amet consectetur, adipisicing elit. Expedita assumenda quaerat sapiente aut eos iure. Tempora eligendi reiciendis consequuntur repellendus dolor laboriosam eveniet, hic numquam sed natus deserunt facere nemo?"
-            },
-            {
-                "title": "Paragraph 3",
-                "content": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita assumenda quaerat sapiente aut eos iure. Tempora eligendi reiciendis consequuntur repellendus dolor laboriosam eveniet, hic numquam sed natus deserunt facere nemo?"
+                "title": "Beyond the Screen",
+                "content": "When I step away from the keyboard, I am usually keeping up with the fast-paced world of Formula 1, unwinding with a few video games, or stepping up to the oche for a round of darts."
             }
         ]
     }

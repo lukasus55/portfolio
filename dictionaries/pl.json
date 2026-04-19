@@ -39,16 +39,12 @@
         "title": "O Mnie",
         "paragraphs": [
             {
-                "title": "Akapit 1",
-                "content": "Lorem ipsum ALE PO POLSKU dolor sit amet consectetur, adipisicing elit. Expedita assumenda quaerat sapiente aut eos iure. Tempora eligendi reiciendis consequuntur repellendus dolor laboriosam eveniet, hic numquam sed natus deserunt facere nemo?"
+                "title": "Profil Zawodowy",
+                "content": "Jestem 19-letnim full-stack developerem, który z zaangażowaniem tworzy wydajne, zorientowane na użytkownika aplikacje od podstaw. Świetnie odnajduję się w rozwiązywaniu złożonych problemów technicznych, szybko się adaptuję i zawsze chętnie uczę się nowych frameworków oraz technologii, aby nieustannie podnosić swoje kwalifikacje."
             },
             {
-                "title": "Akapit 2",
-                "content": "Lorem ipsum ALE PO POLSKU dolor sit amet consectetur, adipisicing elit. Expedita assumenda quaerat sapiente aut eos iure. Tempora eligendi reiciendis consequuntur repellendus dolor laboriosam eveniet, hic numquam sed natus deserunt facere nemo?"
-            },
-            {
-                "title": "Akapit 3",
-                "content": "Lorem ipsum ALE PO POLSKU dolor sit amet consectetur, adipisicing elit. Expedita assumenda quaerat sapiente aut eos iure. Tempora eligendi reiciendis consequuntur repellendus dolor laboriosam eveniet, hic numquam sed natus deserunt facere nemo?"
+                "title": "Poza Ekranem",
+                "content": "Kiedy odchodzę od klawiatury, zazwyczaj śledzę dynamiczny świat Formuły 1, relaksuję się przy grach wideo lub staję przed tarczą, by rozegrać partyjkę darta."
             }
         ]
     }
