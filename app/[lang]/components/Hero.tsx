@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import HeroButton from './HeroButton';
 
 type Dictionary = typeof import('../../../dictionaries/en.json');
 
@@ -23,23 +24,9 @@ export default function Hero({ dict } : { dict: Dictionary }) {
 
             <div className='flex mt-20 gap-2'>
 
-                <Link href="https://github.com/lukasus55" target='_blank'>
-                    <button className="group flex items-center text-xl py-2 px-2.5 bg-foreground text-background font-semibold rounded-full transition-all cursor-pointer">
-                        <Image src="/github.svg" width={24} height={24} alt={'Github'}/> 
-                        <span className="max-w-0 overflow-hidden whitespace-nowrap transition-all duration-300 ease-in-out group-hover:max-w-xs group-hover:ml-2">
-                            Github
-                        </span>
-                    </button>
-                </Link>
-
-                <Link href="mailto:lukas.kostyk@gmail.com">
-                    <button className="group flex items-center text-xl py-2 px-2.5 bg-foreground text-background font-semibold rounded-full transition-all cursor-pointer">
-                        <Image src="/mail.svg" width={24} height={24} alt={'Github'}/> 
-                        <span className="max-w-0 overflow-hidden whitespace-nowrap transition-all duration-300 ease-in-out group-hover:max-w-xs group-hover:ml-2">
-                            E-mail
-                        </span>
-                    </button>
-                </Link>
+                <HeroButton linkUrl='https://github.com/lukasus55' text='Github' imgUrl='/github.svg' imgAlt='Github icon'/>
+                <HeroButton linkUrl='https://www.linkedin.com/in/lkostyk/' text='LinkedIn' imgUrl='/linkedin.svg' imgAlt='LinkedIn icon'/>
+                <HeroButton linkUrl='mailto:lukas.kostyk@gmail.com' text='E-mail' imgUrl='/mail.svg' imgAlt='E-Mail icon'/>
 
             </div>
 

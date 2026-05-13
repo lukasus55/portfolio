@@ -37,7 +37,7 @@ export default function Projects({ dict } : { dict: Dictionary }) {
                         title = {dict.projects.dartES.title}
                         description = {dict.projects.dartES.description}
                         tags = {['react', 'tailwind', 'typescript']}
-                        websiteLink = 'https://lukasus55.github.io/dartES/'
+                        websiteLink = 'https://dart.kkol.pl/'
                         githubLink = 'https://github.com/lukasus55/dartES'
                         imgSrc = '/dartes-mockup.webp'
                         dict={dict}
